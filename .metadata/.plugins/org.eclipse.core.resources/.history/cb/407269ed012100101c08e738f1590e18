@@ -1,0 +1,95 @@
+2025-04-24T15:23:53.119+05:30  INFO 14652 --- [UserPortfolio] [main] in.hcl.app.Application                   : Starting Application using Java 17.0.1 with PID 14652 (E:\Shahrukh\springcloud\51_UserAuthentication\target\classes started by sangita setha in E:\Shahrukh\springcloud\51_UserAuthentication)
+2025-04-24T15:23:53.122+05:30  INFO 14652 --- [UserPortfolio] [main] in.hcl.app.Application                   : No active profile set, falling back to 1 default profile: "default"
+2025-04-24T15:23:54.118+05:30  INFO 14652 --- [UserPortfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-24T15:23:54.220+05:30  INFO 14652 --- [UserPortfolio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2025-04-24T15:23:54.424+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=25d6f2e1-d803-3814-90aa-f27141d52627
+2025-04-24T15:23:54.958+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-04-24T15:23:54.971+05:30  INFO 14652 --- [UserPortfolio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-24T15:23:54.972+05:30  INFO 14652 --- [UserPortfolio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-24T15:23:55.029+05:30  INFO 14652 --- [UserPortfolio] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-24T15:23:55.030+05:30  INFO 14652 --- [UserPortfolio] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1865 ms
+2025-04-24T15:23:55.313+05:30  INFO 14652 --- [UserPortfolio] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-24T15:23:55.385+05:30  INFO 14652 --- [UserPortfolio] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-24T15:23:55.433+05:30  INFO 14652 --- [UserPortfolio] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-24T15:23:55.671+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-24T15:23:55.699+05:30  INFO 14652 --- [UserPortfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-24T15:23:55.871+05:30  INFO 14652 --- [UserPortfolio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-04-24T15:23:55.874+05:30  INFO 14652 --- [UserPortfolio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-24T15:23:55.904+05:30  WARN 14652 --- [UserPortfolio] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-24T15:23:55.925+05:30  INFO 14652 --- [UserPortfolio] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-24T15:23:56.617+05:30  INFO 14652 --- [UserPortfolio] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-24T15:23:56.675+05:30  INFO 14652 --- [UserPortfolio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24T15:23:56.976+05:30  INFO 14652 --- [UserPortfolio] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-04-24T15:23:56.976+05:30  WARN 14652 --- [UserPortfolio] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-04-24T15:23:57.086+05:30  WARN 14652 --- [UserPortfolio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-24T15:23:57.702+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-24T15:23:57.818+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-24T15:23:58.189+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-24T15:23:58.357+05:30  INFO 14652 --- [UserPortfolio] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-24T15:23:58.403+05:30  WARN 14652 --- [UserPortfolio] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-24T15:23:58.484+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-24T15:23:58.502+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-24T15:23:58.506+05:30  INFO 14652 --- [UserPortfolio] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-24T15:23:58.513+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-24T15:23:58.809+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-24T15:23:58.811+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-24T15:23:58.812+05:30  INFO 14652 --- [UserPortfolio] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-24T15:23:58.814+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1745488438813 with initial instances count: 4
+2025-04-24T15:23:58.820+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERPORTFOLIO with eureka with status UP
+2025-04-24T15:23:58.820+05:30  INFO 14652 --- [UserPortfolio] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1745488438820, current=UP, previous=STARTING]
+2025-04-24T15:23:58.822+05:30  INFO 14652 --- [UserPortfolio] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERPORTFOLIO/192.168.1.46:UserPortfolio:8081: registering service...
+2025-04-24T15:23:58.841+05:30  INFO 14652 --- [UserPortfolio] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-04-24T15:23:58.842+05:30  INFO 14652 --- [UserPortfolio] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-04-24T15:23:58.861+05:30  INFO 14652 --- [UserPortfolio] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERPORTFOLIO/192.168.1.46:UserPortfolio:8081 - registration status: 204
+2025-04-24T15:23:58.968+05:30  INFO 14652 --- [UserPortfolio] [main] in.hcl.app.Application                   : Started Application in 6.514 seconds (process running for 7.119)
+2025-04-24T15:24:00.532+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-24T15:24:00.532+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-24T15:24:00.535+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-24T15:28:58.527+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:33:58.541+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:38:58.544+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:43:58.549+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:45:47.746+05:30  WARN 14652 --- [UserPortfolio] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s460ms764µs600ns).
+2025-04-24T15:50:20.019+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:55:20.023+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:00:20.040+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:05:20.061+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:10:20.070+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:15:20.073+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:20:20.077+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:25:20.118+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:30:20.132+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:35:20.142+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:40:20.149+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:45:20.157+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:50:20.199+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:55:20.240+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T17:00:20.255+05:30  INFO 14652 --- [UserPortfolio] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T17:04:13.608+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:13.606+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(111)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:13.722+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(112)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:13.726+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERPORTFOLIO with eureka with status DOWN
+2025-04-24T17:04:13.729+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1745494453729, current=DOWN, previous=UP]
+2025-04-24T17:04:13.733+05:30  INFO 14652 --- [UserPortfolio] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERPORTFOLIO/192.168.1.46:UserPortfolio:8081: registering service...
+2025-04-24T17:04:13.883+05:30  INFO 14652 --- [UserPortfolio] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERPORTFOLIO/192.168.1.46:UserPortfolio:8081 - registration status: 204
+2025-04-24T17:04:13.948+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(113)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:14.093+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-24T17:04:14.098+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(114)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:14.549+05:30  INFO 14652 --- [UserPortfolio] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-24T17:04:14.685+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24T17:04:14.768+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-24T17:04:14.790+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-24T17:04:14.795+05:30  INFO 14652 --- [UserPortfolio] [RMI TCP Connection(110)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

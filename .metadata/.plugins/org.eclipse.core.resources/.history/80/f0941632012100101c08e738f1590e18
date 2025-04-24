@@ -1,0 +1,93 @@
+2025-04-24T15:21:31.275+05:30  INFO 7128 --- [StockApi] [main] in.hcl.app.Application                   : Starting Application using Java 17.0.1 with PID 7128 (E:\Shahrukh\springcloud\51_StockApi\target\classes started by sangita setha in E:\Shahrukh\springcloud\51_StockApi)
+2025-04-24T15:21:31.277+05:30  INFO 7128 --- [StockApi] [main] in.hcl.app.Application                   : No active profile set, falling back to 1 default profile: "default"
+2025-04-24T15:21:31.974+05:30  INFO 7128 --- [StockApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-24T15:21:32.110+05:30  INFO 7128 --- [StockApi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2025-04-24T15:21:32.249+05:30  INFO 7128 --- [StockApi] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0fec5dec-974a-3821-8eab-77a3dbd60b87
+2025-04-24T15:21:32.602+05:30  INFO 7128 --- [StockApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8093 (http)
+2025-04-24T15:21:32.618+05:30  INFO 7128 --- [StockApi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-24T15:21:32.619+05:30  INFO 7128 --- [StockApi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-24T15:21:32.698+05:30  INFO 7128 --- [StockApi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-24T15:21:32.699+05:30  INFO 7128 --- [StockApi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1385 ms
+2025-04-24T15:21:32.868+05:30  INFO 7128 --- [StockApi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-24T15:21:32.924+05:30  INFO 7128 --- [StockApi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-24T15:21:32.963+05:30  INFO 7128 --- [StockApi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-24T15:21:33.245+05:30  INFO 7128 --- [StockApi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-24T15:21:33.275+05:30  INFO 7128 --- [StockApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-24T15:21:33.459+05:30  INFO 7128 --- [StockApi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-04-24T15:21:33.460+05:30  INFO 7128 --- [StockApi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-24T15:21:33.486+05:30  WARN 7128 --- [StockApi] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-24T15:21:33.510+05:30  INFO 7128 --- [StockApi] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-24T15:21:34.197+05:30  INFO 7128 --- [StockApi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-24T15:21:34.257+05:30  INFO 7128 --- [StockApi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24T15:21:34.495+05:30  INFO 7128 --- [StockApi] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-24T15:21:34.896+05:30  WARN 7128 --- [StockApi] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-24T15:21:34.947+05:30  INFO 7128 --- [StockApi] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-24T15:21:35.423+05:30  INFO 7128 --- [StockApi] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-04-24T15:21:35.729+05:30  INFO 7128 --- [StockApi] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-04-24T15:21:35.765+05:30  WARN 7128 --- [StockApi] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-04-24T15:21:35.817+05:30  INFO 7128 --- [StockApi] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-04-24T15:21:35.839+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-04-24T15:21:35.842+05:30  INFO 7128 --- [StockApi] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:21:35.851+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-04-24T15:21:35.851+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-04-24T15:21:35.851+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-04-24T15:21:35.851+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-04-24T15:21:35.852+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-04-24T15:21:35.852+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-04-24T15:21:35.852+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-04-24T15:21:36.180+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-04-24T15:21:36.183+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-04-24T15:21:36.185+05:30  INFO 7128 --- [StockApi] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-04-24T15:21:36.186+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1745488296186 with initial instances count: 3
+2025-04-24T15:21:36.189+05:30  INFO 7128 --- [StockApi] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application STOCKAPI with eureka with status UP
+2025-04-24T15:21:36.190+05:30  INFO 7128 --- [StockApi] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1745488296190, current=UP, previous=STARTING]
+2025-04-24T15:21:36.191+05:30  INFO 7128 --- [StockApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCKAPI/192.168.1.46:StockApi:8093: registering service...
+2025-04-24T15:21:36.212+05:30  INFO 7128 --- [StockApi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8093 (http) with context path '/'
+2025-04-24T15:21:36.213+05:30  INFO 7128 --- [StockApi] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8093
+2025-04-24T15:21:36.233+05:30  INFO 7128 --- [StockApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCKAPI/192.168.1.46:StockApi:8093 - registration status: 204
+2025-04-24T15:21:36.329+05:30  INFO 7128 --- [StockApi] [main] in.hcl.app.Application                   : Started Application in 5.531 seconds (process running for 6.064)
+2025-04-24T15:26:35.854+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:31:35.869+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:36:35.884+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:41:35.897+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:45:55.379+05:30  WARN 7128 --- [StockApi] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s457ms815µs).
+2025-04-24T15:47:57.365+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:52:57.370+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T15:57:57.373+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:02:57.385+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:07:57.397+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:12:57.409+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:17:57.424+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:22:57.433+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:27:57.476+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:32:57.489+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:37:57.492+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:42:57.531+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:47:57.562+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:52:57.570+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T16:57:57.577+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T17:02:57.593+05:30  INFO 7128 --- [StockApi] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-24T17:04:53.471+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(110)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:53.471+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(109)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:53.471+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:53.471+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(107)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-24T17:04:53.499+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application STOCKAPI with eureka with status DOWN
+2025-04-24T17:04:53.500+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1745494493500, current=DOWN, previous=UP]
+2025-04-24T17:04:53.501+05:30  INFO 7128 --- [StockApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCKAPI/192.168.1.46:StockApi:8093: registering service...
+2025-04-24T17:04:53.528+05:30  INFO 7128 --- [StockApi] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCKAPI/192.168.1.46:StockApi:8093 - registration status: 204
+2025-04-24T17:04:53.570+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-24T17:04:53.886+05:30  INFO 7128 --- [StockApi] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-24T17:04:53.912+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-24T17:04:53.957+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-24T17:04:53.974+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-24T17:04:53.975+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-24T17:04:56.979+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-24T17:04:57.010+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STOCKAPI/192.168.1.46:StockApi:8093 - deregister  status: 200
+2025-04-24T17:04:57.013+05:30  INFO 7128 --- [StockApi] [RMI TCP Connection(108)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
